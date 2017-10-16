@@ -1,1 +1,16 @@
-Hello to {{title}}
+<tr-book-grid
+  *ngIf="isGridView; else listView"
+  [booksList]="books">
+</tr-book-grid>
+
+<ng-template #listView>
+  <tr-book-list [booksList]="books"></tr-book-list>
+</ng-template>
+
+
+
+<tr-toggle-viewmode
+  (isGridViewChange)=
+    "toggleGridView($event)">
+</tr-toggle-viewmode>
+

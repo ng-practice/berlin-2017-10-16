@@ -1,0 +1,22 @@
+<!--.content>.title+.authors+.price+.rating -->
+<div class="content">
+  <div class="title">Title: {{book.title}}</div>
+  <div class="authors">Autoren: {{book.authors}}</div>
+  <div class="price">Preis: {{book.price | currency}}</div>
+  <div class="rating">Rating: {{book.rating}}</div>
+</div>
+<!-- .actions>.btn-group>(button.btn)*2 -->
+<div class="actions">
+  <div class="btn-group">
+    <button
+      (click.once)="rateUp()"
+      class="btn">
+      +
+    </button>
+    <button
+    (click.once)="rateDown()"
+    class="btn">
+    -
+  </button>
+  </div>
+</div>
