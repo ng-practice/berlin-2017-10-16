@@ -8,6 +8,8 @@ import { ToggleViewmodeComponent } from './toggle-viewmode/toggle-viewmode.compo
 import { UtilitiesModule } from '../utilities/utilities.module';
 import { BookAddFormComponent } from './book-add-form/book-add-form.component';
 import { FormsModule } from '@angular/forms';
+import { BookDashboardComponent } from './book-dashboard/book-dashboard.component';
+import { BooksService } from 'app/book/core/providers/books.service';
 
 @NgModule({
   imports: [
@@ -21,14 +23,12 @@ import { FormsModule } from '@angular/forms';
     BookListComponent,
     BookListElementComponent,
     ToggleViewmodeComponent,
-    BookAddFormComponent
+    BookAddFormComponent,
+    BookDashboardComponent
   ],
   exports: [
-    BookGridComponent,
-    BookListComponent,
-    BookListElementComponent,
-    ToggleViewmodeComponent,
-    BookAddFormComponent
-  ]
+    BookDashboardComponent
+  ],
+  providers: [BooksService]
 })
 export class BookModule { }

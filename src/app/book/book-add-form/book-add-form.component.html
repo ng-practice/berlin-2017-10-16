@@ -7,8 +7,12 @@
         <label for="title"></label>
         <label
         [class.invalid]="titleStatus.invalid
-          && (titleStatus.dirty || titleStatus.touched)"
-        class="tooltip tooltip-validation tooltip-top-left tooltip-md">
+          && (titleStatus.dirty
+          || titleStatus.touched)"
+        class="tooltip
+          tooltip-validation
+          tooltip-top-left
+          tooltip-md">
           <input
           [(ngModel)]="book.title"
           #titleStatus="ngModel"
@@ -49,6 +53,7 @@
       </div>
     </section>
     <button
+    [disabled]="addForm.invalid"
     type="button"
     (click)="createBook(addForm)"
     class="btn btn-primary">
