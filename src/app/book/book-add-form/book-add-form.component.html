@@ -1,0 +1,57 @@
+<!-- form>section.form-block>
+  label+.form-group*4>label+input.form-control-->
+  <form action="" #addForm="ngForm">
+    <section class="form-block">
+      <label for="title">Titel</label>
+      <div class="form-group">
+        <label for="title"></label>
+        <label
+        [class.invalid]="titleStatus.invalid
+          && (titleStatus.dirty || titleStatus.touched)"
+        class="tooltip tooltip-validation tooltip-top-left tooltip-md">
+          <input
+          [(ngModel)]="book.title"
+          #titleStatus="ngModel"
+          required
+          name="title"
+          id="title"
+          type="text"
+          class="form-control">
+          <span class="tooltip-content">
+            Titel muss angegeben werden
+          </span>
+      </label>
+      </div>
+      <div class="form-group">
+        <label for="isbn">ISBN</label>
+        <input
+        [(ngModel)]="book.isbn"
+        #isbnStatus="ngModel"
+        name="isbn"
+        id="isbn"
+        type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="authors">Autoren</label>
+        <input
+        [(ngModel)]="book.authors"
+        name="authors"
+        id="authors"
+        type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="price">Preis</label>
+        <input
+        [(ngModel)]="book.price"
+        name="price"
+        id="price"
+        type="number" class="form-control">
+      </div>
+    </section>
+    <button
+    type="button"
+    (click)="createBook(addForm)"
+    class="btn btn-primary">
+    Buch anlegen
+  </button>
+  </form>

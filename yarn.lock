@@ -213,8 +213,8 @@
   resolved "https://registry.yarnpkg.com/@types/node-json-db/-/node-json-db-0.0.1.tgz#f5e60b36e8b3592ac047f427595de3f2d6592b86"
 
 "@types/node@*":
-  version "8.0.34"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.34.tgz#55f801fa2ddb2a40dd6dfc15ecfe1dde9c129fe9"
+  version "8.0.40"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.40.tgz#260f0440db0643f034c9103bba0be777ce25317c"
 
 "@types/node@^6.0.46", "@types/node@~6.0.60":
   version "6.0.89"

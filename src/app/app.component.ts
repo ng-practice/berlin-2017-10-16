@@ -39,4 +39,8 @@ export class AppComponent implements OnInit {
   toggleGridView(isGridview: boolean) {
     this.isGridView = isGridview;
   }
+
+  addBook(newBook: Book) {
+    this.books.push(newBook);
+  }
 }
