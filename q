@@ -1,0 +1,23 @@
+* [33m55f8f9d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m adds Service returning data as Observable
+* [33mf9ba75d[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m adds addForm
+* [33mab0bdf8[m day 1: components, property & event bindings, directives
+* [33m03c4cda[m sets dynamic version for @angular-cli
+* [33m43eb672[m initial commit
+* [33m49c04b7[m[33m ([m[1;31morigin/training/neuss[m[33m)[m add http server communication
+* [33med62807[m add validation for title
+* [33m4d3d510[m use ngModel in component book-add-form
+* [33m568eed9[m add component book-add-form
+* [33m7cfe652[m add directive click.once
+* [33mb24cc32[m (ie) get browser to work
+* [33ma05c10b[m toggle between view modes
+* [33mcd6ce30[m (component) add book-grid
+* [33m8b799e1[m (component) add book-grid-element
+* [33m3cc051e[m adjust test data
+* [33mf9b4198[m add styles for book-list
+* [33mf09ba80[m add covers
+* [33mcd4aef0[m rename additional-styles to snippets
+* [33mc7013c5[m fix start page
+* [33m00d04bf[m add additional styles
+* [33mbfc3856[m provide HTTP-API
+* [33m427c1d1[m install clarity-ui
+* [33m53c8685[m chore: initial commit from @angular/cli

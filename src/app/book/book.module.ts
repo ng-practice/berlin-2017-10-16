@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BookGridElementComponent } from './book-grid-element/book-grid-element.component';
@@ -15,7 +16,8 @@ import { BooksService } from 'app/book/core/providers/books.service';
   imports: [
     CommonModule,
     UtilitiesModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   declarations: [
     BookGridElementComponent,

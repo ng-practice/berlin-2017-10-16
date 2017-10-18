@@ -11,7 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Start Backend
 
-- Execute `npm run api` to start the HTTP-API.
+- Execute `npm run start:server` to start the HTTP-API.
 - The API is hosted on `http://localhost:4280`.
 
 |        |Url|Description|

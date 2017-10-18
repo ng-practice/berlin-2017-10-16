@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { Book } from 'app/book/models/book';
 import {
   NgForm
@@ -10,19 +10,17 @@ import {
 })
 export class BookAddFormComponent implements OnInit {
   @Output() created =
-    new EventEmitter<Book>();
+    new EventEmitter<{newBook: Book, addForm: NgForm}>();
   book: Book = Book.empty();
-
+  @Input() bookCount: number;
   constructor() { }
 
   ngOnInit() {
   }
 
   createBook(addForm: NgForm) {
-    this.created.emit(
-      {...{},
-      ...this.book});
-      addForm.reset();
+    const copiedBook = {...{}, ...this.book};
+    this.created.emit({newBook: copiedBook, addForm: addForm});
   }
 
 
